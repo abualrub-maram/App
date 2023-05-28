@@ -17,19 +17,19 @@ public class HealthArticlesActivity extends AppCompatActivity {
 
     private String [][] health_details =
             {
-                    {"Walking Daily", "", "", "", "Click for More Details"},
-                    {"Home Care for COVID-19", "", "", "", "Click for More Details"},
-                    {"Stop Smoking", "", "", "", "Click for More Details"},
-                    {"Menstrual Cramps", "", "", "", "Click for More Details"},
-                    {"Healthy System", "", "", "", "Click for More Details"}
+                    {"COVID-19 Advice", "", "", "", "Click for More Details"},
+                    {"Eye Health Advice", "", "", "", "Click for More Details"},
+                    {"How to Manage Anxiety", "", "", "", "Click for More Details"},
+                    {"Antibiotics Adivce", "", "", "", "Click for More Details"},
+                    {"Healthy Pregenancy Advice", "", "", "", "Click for More Details"}
             };
     private int[] images =
             {
-                    R.drawable.health1,
-                    R.drawable.health2,
-                    R.drawable.health3,
-                    R.drawable.health4,
-                    R.drawable.health5
+//                    R.drawable.COVID19AdviceforElderly,
+//                    R.drawable.EyeHealthAdvice,
+//                    R.drawable.HowtoManageAnxiety,
+//                    R.drawable.MisusingandOverusingAntibiotics,
+//                    R.drawable.TipsforHealthyPregnancy
             };
 
     HashMap<String,String> item;
