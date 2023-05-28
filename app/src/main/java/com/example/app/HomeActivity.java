@@ -21,6 +21,8 @@ public class HomeActivity extends AppCompatActivity {
         String username = sharedpreferences.getString("username", "").toString();
         Toast.makeText(getApplicationContext(), "Welcome, " + username, Toast.LENGTH_SHORT).show();
 
+        //Home Activity Layout taken from YT Tutorial
+
         CardView exit = findViewById(R.id.cardExit);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override

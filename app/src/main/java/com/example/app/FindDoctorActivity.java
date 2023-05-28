@@ -23,6 +23,8 @@ public class FindDoctorActivity extends AppCompatActivity {
             }
         });
 
+        //Find Doctor Activity Layout taken from YT Tutorial
+
         CardView familyphysician = findViewById(R.id.cardFDFamilyPhysician);
         familyphysician.setOnClickListener(new View.OnClickListener() {
             @Override

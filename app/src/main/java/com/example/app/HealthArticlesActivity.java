@@ -25,11 +25,11 @@ public class HealthArticlesActivity extends AppCompatActivity {
             };
     private int[] images =
             {
-//                    R.drawable.COVID19AdviceforElderly,
-//                    R.drawable.EyeHealthAdvice,
-//                    R.drawable.HowtoManageAnxiety,
-//                    R.drawable.MisusingandOverusingAntibiotics,
-//                    R.drawable.TipsforHealthyPregnancy
+                    R.drawable.a,
+                    R.drawable.b,
+                    R.drawable.c,
+                    R.drawable.d,
+                    R.drawable.e
             };
 
     HashMap<String,String> item;
