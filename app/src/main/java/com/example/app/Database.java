@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import androidx.annotation.AttrRes;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
@@ -91,20 +92,23 @@ public class Database extends SQLiteOpenHelper {
 
     public ArrayList getCartData(String username, String otype) {
         ArrayList<String> arr = new ArrayList<>();
+        ArrayList<Object> resp = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
-        String str[] = new String[2];
-        str[0] = username;
-        str[1] = otype;
-        Cursor c = db.rawQuery("select * from cart where username=? and otype=?", str);
+//        ArrayList str[][] = new ArrayList[][];
+        int i = 0;
+        Cursor c = db.rawQuery("select * from cart where username=? and otype=?", new String[]{username, otype});
         if (c.moveToFirst()) {
             do {
                 String product = c.getString(1);
                 String price = c.getString(2);
-                arr.add(product + "/$" + price);
+                arr.add(product);
+                arr.add(price);
+                resp.addAll(arr);
+                arr.clear();
             } while (c.moveToNext());
         }
         db.close();
-        return arr;
+        return resp;
     }
 
     public void addOrder(String username, String fullname, String address, String contact, int pincode, String date, String time, float price, String  otype) {

@@ -1,6 +1,7 @@
 package com.example.app;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -20,6 +21,8 @@ import android.widget.TimePicker;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import android.util.Log;
+
 
 public class CartLabActivity extends AppCompatActivity {
 
@@ -55,16 +58,17 @@ public class CartLabActivity extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(), "" + dbData, Toast.LENGTH_LONG).show();
 
         packages = new String[dbData.size()][];
-        for (int i=0; i<packages.length; i++) {
-            packages[1] = new String[5];
+        for (int i=0; i < packages.length; i++) {
+            packages[i] = new String[5];
         }
 
-        for (int i=0; i<dbData.size(); i++) {
-            String arrData = dbData.get(i).toString();
-            String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
-            packages[i][0] = strData[0];
-            packages[i][4] = "Cost: "+strData[1];
-            totalAmount = totalAmount + Float.parseFloat(strData[1]);
+        for (int i=0; i < dbData.size(); i++) {
+//             arrData = dbData.get(i);
+            Log.d("TAG", "arrData = " + dbData);
+//            String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
+            packages[i][0] = dbData.get(i).toString();
+            packages[i][1] = "cost:" + dbData.get(i).toString();
+            totalAmount = totalAmount + Float.parseFloat(dbData.get(1).toString());
         }
 
         tvTotal.setText("Total Cost: "+totalAmount);

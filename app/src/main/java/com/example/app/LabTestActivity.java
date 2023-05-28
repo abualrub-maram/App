@@ -17,11 +17,11 @@ public class LabTestActivity extends AppCompatActivity {
 
     private String[][] packages =
             {
-                    {"Package 1: Full Body Checkup", "", "", "", "250/$"},
-                    {"Package 2: Blood Glucose Test", "", "", "", "20/$"},
-                    {"Package 3: COVID-19 Antibody Test", "", "", "", "150/$"},
-                    {"Package 4: Thyroid Function Test", "", "", "", "130/$"},
-                    {"Package 5: Immunity Testing", "", "", "", "200/$"}
+                    {"Package 1: Full Body Checkup", "", "", "", "250"},
+                    {"Package 2: Blood Glucose Test", "", "", "", "20"},
+                    {"Package 3: COVID-19 Antibody Test", "", "", "", "150"},
+                    {"Package 4: Thyroid Function Test", "", "", "", "130"},
+                    {"Package 5: Immunity Testing", "", "", "", "200"}
             };
 
     private String[] package_details = {

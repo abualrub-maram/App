@@ -17,47 +17,47 @@ import java.util.HashMap;
 public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctor_details1 =
             {
-                    {"Doctor Name : Laurel Serpico", "Hospital Address : Bawshar", "Exp : 17yrs", "Number : 95052528", "Fees : 70/$"},
-                    {"Doctor Name : Noelle Dane", "Hospital Address : Seeb", "Exp : 7yrs", "Number : 97117584", "Fees : 40/$"},
-                    {"Doctor Name : Nadia D'Amore", "Hospital Address : Ghubra", "Exp : 14yrs", "Number : 95830718", "Fees : 60/$"},
-                    {"Doctor Name : Yolanda Farro", "Hospital Address : Al Bustan", "Exp : 6yrs", "Number : 98185922", "Fees : 45/$"},
-                    {"Doctor Name : Mara Harford", "Hospital Address : Qurum", "Exp : 11yrs", "Number : 98599969", "Fees : 110/$"}
+                    {"Doctor Name : Laurel Serpico", "Hospital Address : Bawshar", "Exp : 17yrs", "Number : 95052528", "Fees : 70"},
+                    {"Doctor Name : Noelle Dane", "Hospital Address : Seeb", "Exp : 7yrs", "Number : 97117584", "Fees : 40"},
+                    {"Doctor Name : Nadia D'Amore", "Hospital Address : Ghubra", "Exp : 14yrs", "Number : 95830718", "Fees : 60"},
+                    {"Doctor Name : Yolanda Farro", "Hospital Address : Al Bustan", "Exp : 6yrs", "Number : 98185922", "Fees : 45"},
+                    {"Doctor Name : Mara Harford", "Hospital Address : Qurum", "Exp : 11yrs", "Number : 98599969", "Fees : 110"}
             };
 
     private String[][] doctor_details2 =
             {
-                    {"Doctor Name : Elisabeth Pastore", "Hospital Address : Ibri", "Exp : 5yrs", "Number : 91199581", "Fees : 80/$"},
-                    {"Doctor Name : Carl Todd", "Hospital Address : Sur", "Exp : 17yrs", "Number : 99537528", "Fees : 30/$"},
-                    {"Doctor Name : Farrah Krebs", "Hospital Address : Bawshar", "Exp : 14yrs", "Number : 94467023", "Fees : 60/$"},
-                    {"Doctor Name : Durante Barros", "Hospital Address : Nizwa", "Exp : 6yrs", "Number : 97542958", "Fees : 75/$"},
-                    {"Doctor Name : Rosmarie Noyer", "Hospital Address : Qurum", "Exp : 15yrs", "Number : 90965286", "Fees : 100/$"}
+                    {"Doctor Name : Elisabeth Pastore", "Hospital Address : Ibri", "Exp : 5yrs", "Number : 91199581", "Fees : 80"},
+                    {"Doctor Name : Carl Todd", "Hospital Address : Sur", "Exp : 17yrs", "Number : 99537528", "Fees : 30"},
+                    {"Doctor Name : Farrah Krebs", "Hospital Address : Bawshar", "Exp : 14yrs", "Number : 94467023", "Fees : 60"},
+                    {"Doctor Name : Durante Barros", "Hospital Address : Nizwa", "Exp : 6yrs", "Number : 97542958", "Fees : 75"},
+                    {"Doctor Name : Rosmarie Noyer", "Hospital Address : Qurum", "Exp : 15yrs", "Number : 90965286", "Fees : 100"}
             };
 
     private String[][] doctor_details3 =
             {
-                    {"Doctor Name : Sabina Sniders", "Hospital Address : Salalah", "Exp : 11yrs", "Number : 92256784", "Fees : 40/$"},
-                    {"Doctor Name : Cerdic Faolain", "Hospital Address : Seeb", "Exp : 4yrs", "Number : 91677465", "Fees : 80/$"},
-                    {"Doctor Name : Octavia Schnell", "Hospital Address : Al Khuwayr", "Exp : 14yrs", "Number : 99525788", "Fees : 30/$"},
-                    {"Doctor Name : Jamie Hedlund", "Hospital Address : Ghubra", "Exp : 9yrs", "Number : 91611962", "Fees : 55/$"},
-                    {"Doctor Name : Marinko Valerio", "Hospital Address : Sur", "Exp : 13yrs", "Number : 92256938", "Fees : 90/$"}
+                    {"Doctor Name : Sabina Sniders", "Hospital Address : Salalah", "Exp : 11yrs", "Number : 92256784", "Fees : 40"},
+                    {"Doctor Name : Cerdic Faolain", "Hospital Address : Seeb", "Exp : 4yrs", "Number : 91677465", "Fees : 80"},
+                    {"Doctor Name : Octavia Schnell", "Hospital Address : Al Khuwayr", "Exp : 14yrs", "Number : 99525788", "Fees : 30"},
+                    {"Doctor Name : Jamie Hedlund", "Hospital Address : Ghubra", "Exp : 9yrs", "Number : 91611962", "Fees : 55"},
+                    {"Doctor Name : Marinko Valerio", "Hospital Address : Sur", "Exp : 13yrs", "Number : 92256938", "Fees : 90"}
             };
 
     private String[][] doctor_details4 =
             {
-                    {"Doctor Name : Minako Sama", "Hospital Address : Ibra", "Exp : 13yrs", "Number : 90864257", "Fees : 75/$"},
-                    {"Doctor Name : Raul Stevens", "Hospital Address : Seeb", "Exp : 7yrs", "Number : 99258425", "Fees : 60/$"},
-                    {"Doctor Name : Melisa Shin", "Hospital Address : Al Khuwayr", "Exp : 14yrs", "Number : 99753173", "Fees : 30/$"},
-                    {"Doctor Name : Friderik Scully", "Hospital Address : Ibri", "Exp : 6yrs", "Number : 98642124", "Fees : 95/$"},
-                    {"Doctor Name : Eva Christian", "Hospital Address : Qurum", "Exp : 11yrs", "Number : 95318530", "Fees : 40/$"}
+                    {"Doctor Name : Minako Sama", "Hospital Address : Ibra", "Exp : 13yrs", "Number : 90864257", "Fees : 75"},
+                    {"Doctor Name : Raul Stevens", "Hospital Address : Seeb", "Exp : 7yrs", "Number : 99258425", "Fees : 60"},
+                    {"Doctor Name : Melisa Shin", "Hospital Address : Al Khuwayr", "Exp : 14yrs", "Number : 99753173", "Fees : 30"},
+                    {"Doctor Name : Friderik Scully", "Hospital Address : Ibri", "Exp : 6yrs", "Number : 98642124", "Fees : 95"},
+                    {"Doctor Name : Eva Christian", "Hospital Address : Qurum", "Exp : 11yrs", "Number : 95318530", "Fees : 40"}
             };
 
     private String[][] doctor_details5 =
             {
-                    {"Doctor Name : Nico Russo", "Hospital Address : Nizwa", "Exp : 6yrs", "Number : 90537884", "Fees : 60/$"},
-                    {"Doctor Name : Mehdi Murgia", "Hospital Address : Seeb", "Exp : 4yrs", "Number : 95246742", "Fees : 30/$"},
-                    {"Doctor Name : Nadia D'Amore", "Hospital Address : Sur", "Exp : 12yrs", "Number : 91620523", "Fees : 40/$"},
-                    {"Doctor Name : Mick Kurata", "Hospital Address : Suhar", "Exp : 16yrs", "Number : 95546432", "Fees : 65/$"},
-                    {"Doctor Name : Elena Abelli", "Hospital Address : Khasab", "Exp : 2yrs", "Number : 92568125", "Fees : 100/$"}
+                    {"Doctor Name : Nico Russo", "Hospital Address : Nizwa", "Exp : 6yrs", "Number : 90537884", "Fees : 60"},
+                    {"Doctor Name : Mehdi Murgia", "Hospital Address : Seeb", "Exp : 4yrs", "Number : 95246742", "Fees : 30"},
+                    {"Doctor Name : Nadia D'Amore", "Hospital Address : Sur", "Exp : 12yrs", "Number : 91620523", "Fees : 40"},
+                    {"Doctor Name : Mick Kurata", "Hospital Address : Suhar", "Exp : 16yrs", "Number : 95546432", "Fees : 65"},
+                    {"Doctor Name : Elena Abelli", "Hospital Address : Khasab", "Exp : 2yrs", "Number : 92568125", "Fees : 100"}
             };
 
     TextView tv;
